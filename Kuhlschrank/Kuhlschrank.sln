@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kuhlschrank", "Kuhlschrank\Kuhlschrank.csproj", "{8DBD91E7-19BF-4FD6-907A-6A4B6529F93B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DBD91E7-19BF-4FD6-907A-6A4B6529F93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBD91E7-19BF-4FD6-907A-6A4B6529F93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBD91E7-19BF-4FD6-907A-6A4B6529F93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBD91E7-19BF-4FD6-907A-6A4B6529F93B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69E2B899-3EFD-4789-AC2F-F09EA0EF068B}
+	EndGlobalSection
+EndGlobal
