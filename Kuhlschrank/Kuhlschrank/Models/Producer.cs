@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Kuhlschrank.Models
 {
-    public class ClientFridge
+    public class Producer
     {
         [Key]
         public long id { set; get; }
-        [Required]
-        public virtual Fridge fridge { get; set; }
-        [Required]
-        public virtual Client client { get; set; }
+
     }
 }

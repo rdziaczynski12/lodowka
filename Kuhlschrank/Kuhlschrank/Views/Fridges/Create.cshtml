@@ -12,21 +12,20 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
             <div class="form-group">
-                <label asp-for="SerialNumber" class="control-label"></label>
-                <input asp-for="SerialNumber" class="form-control" />
-                <span asp-validation-for="SerialNumber" class="text-danger"></span>
+                <label asp-for="serialNumber" class="control-label"></label>
+                <input asp-for="serialNumber" class="form-control" />
+                <span asp-validation-for="serialNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Temperature" class="control-label"></label>
-                <input asp-for="Temperature" class="form-control" />
-                <span asp-validation-for="Temperature" class="text-danger"></span>
+                <label asp-for="temperature" class="control-label"></label>
+                <input asp-for="temperature" class="form-control" />
+                <span asp-validation-for="temperature" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <div class="checkbox">
                     <label>
-                        <input asp-for="Activated" /> @Html.DisplayNameFor(model => model.Activated)
+                        <input asp-for="activated" /> @Html.DisplayNameFor(model => model.activated)
                     </label>
                 </div>
             </div>

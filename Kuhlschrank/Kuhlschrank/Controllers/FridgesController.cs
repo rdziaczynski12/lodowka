@@ -25,7 +25,7 @@ namespace Kuhlschrank.Controllers
         }
 
         // GET: Fridges/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(long? id)
         {
             if (id == null)
             {
@@ -33,7 +33,7 @@ namespace Kuhlschrank.Controllers
             }
 
             var fridge = await _context.Fridge
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.id == id);
             if (fridge == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace Kuhlschrank.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,SerialNumber,Temperature,Activated")] Fridge fridge)
+        public async Task<IActionResult> Create([Bind("id,serialNumber,temperature,activated")] Fridge fridge)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace Kuhlschrank.Controllers
         }
 
         // GET: Fridges/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
             {
@@ -85,9 +85,9 @@ namespace Kuhlschrank.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,SerialNumber,Temperature,Activated")] Fridge fridge)
+        public async Task<IActionResult> Edit(long id, [Bind("id,serialNumber,temperature,activated")] Fridge fridge)
         {
-            if (id != fridge.Id)
+            if (id != fridge.id)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace Kuhlschrank.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FridgeExists(fridge.Id))
+                    if (!FridgeExists(fridge.id))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace Kuhlschrank.Controllers
         }
 
         // GET: Fridges/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
             {
@@ -124,7 +124,7 @@ namespace Kuhlschrank.Controllers
             }
 
             var fridge = await _context.Fridge
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.id == id);
             if (fridge == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace Kuhlschrank.Controllers
         // POST: Fridges/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(long id)
         {
             var fridge = await _context.Fridge.FindAsync(id);
             _context.Fridge.Remove(fridge);
@@ -144,9 +144,9 @@ namespace Kuhlschrank.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FridgeExists(int id)
+        private bool FridgeExists(long id)
         {
-            return _context.Fridge.Any(e => e.Id == id);
+            return _context.Fridge.Any(e => e.id == id);
         }
     }
 }

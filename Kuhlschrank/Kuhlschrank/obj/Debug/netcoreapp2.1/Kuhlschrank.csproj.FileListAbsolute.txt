@@ -30,9 +30,9 @@ E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Kuhlschrank.Views
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Kuhlschrank.dll
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Kuhlschrank.pdb
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Kuhlschrank.csproj.CopyComplete
+E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Razor\Views\Fridges\Create.g.cshtml.cs
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Razor\Views\Fridges\Delete.g.cshtml.cs
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Razor\Views\Fridges\Details.g.cshtml.cs
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Razor\Views\Fridges\Edit.g.cshtml.cs
 E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\Razor\Views\Fridges\Index.g.cshtml.cs
-E:\GIT\Lodowka\Kuhlschrank\Kuhlschrank\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

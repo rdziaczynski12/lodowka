@@ -9,20 +9,32 @@ namespace Kuhlschrank.Models
     public class Client
     {
         [Key]
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public long id { get; set; }
+        [Required(ErrorMessage = "Imię jest wymagane")]
+        public string firstName { get; set; }
+        [Required(ErrorMessage = "Nazwisko jest wymagane")]
+        public string lastName { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        public DateTime DateOfBirth { get; set; }
-        public string Code { get; set; }
-        public string Place { get; set; }
-        public string Address { get; set; }
+        public DateTime dateOfBirth { get; set; }
+        [Required(ErrorMessage = "Kod pocztowy jest wymagany")]
+        public string code { get; set; }
+        [Required(ErrorMessage = "Miejscowość jest wymagana")]
+        public string place { get; set; }
+        [Required(ErrorMessage = "Adres jest wymagany")]
+        public string address { get; set; }
         [DataType(DataType.PhoneNumber)]
-        public string PhoneNumber { get; set; }
+        public string phoneNumber { get; set; }
+        [Required(ErrorMessage = "E-mail jest wymagany")]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        public string email { get; set; }
+        [Required(ErrorMessage = "Login jest wymagany")]
+        public string login { get; set; }
+        [Required(ErrorMessage = "Hasło jest wymagane")]
+        [StringLength(50, MinimumLength = 8, ErrorMessage = "Hasło musi składać się z min 8 znaków")]
+        [DataType(DataType.Password)]
+        public string password { get; set; }
 
-        public virtual ICollection<ClientFridge> Fridges { get; set; }
+        public virtual ICollection<ClientFridge> fridges { get; set; }
     }
 }
