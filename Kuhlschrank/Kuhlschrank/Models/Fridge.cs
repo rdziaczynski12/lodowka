@@ -18,6 +18,9 @@ namespace Kuhlschrank.Models
         public bool activated { get; set; }
 
         public virtual ICollection<ClientFridge> clients { get; set; }
+        public virtual ICollection<FridgeProduct> products { get; set; }
+        public virtual ICollection<OpenProduct> openProducts { get; set; }
+        public virtual ICollection<Order> orders { get; set; }
 
     }
 }

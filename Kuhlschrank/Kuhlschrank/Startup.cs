@@ -39,6 +39,9 @@ namespace Kuhlschrank
             services.AddDbContext<KuhlschrankContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("KuhlschrankContext")));
 
+            //services.AddDbContext<KuhlschrankContext>(options =>
+            //    options.UseNpgsql(Configuration.GetConnectionString("PostgreSQLKuhlschrankContext")));
+
 
         }
 

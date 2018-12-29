@@ -36,5 +36,8 @@ namespace Kuhlschrank.Models
         public string password { get; set; }
 
         public virtual ICollection<ClientFridge> fridges { get; set; }
+        public virtual ICollection<HistoryRecipe> historyRecipes { get; set; }
+        public virtual ICollection<HistoryProduct> historyProducts { get; set; }
+        public virtual ICollection<Order> orders { get; set; }
     }
 }
