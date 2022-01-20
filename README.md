@@ -1,1 +1,3 @@
-# lodowka
+# Projekt inteligentnej lodówki
+
+W trakcie przygotowywania ...
